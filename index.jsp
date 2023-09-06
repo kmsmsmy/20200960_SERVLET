@@ -1,8 +1,5 @@
-<%@ page contentType = "text/html;charset=utf-8" %> <%-- 한글 깨짐, 앞으로 모든 페이지는 아래 코드 삽입하자. 해결 --%> 
-    HelloWorld h = new HelloWorld();
-%>
-
-
+<%@ page contentType = "text/html;charset=utf-8" %> <%-- 한글 깨짐, 앞으로 모든 페이지는 이 코드를 삽입하자. 해결 --%> 
+<%-- 주석 처리 방법--%>
 
 <html>
 <head>
@@ -40,12 +37,11 @@
 	</footer>
 </body>
 </html>
-<%@ page import="java.util.Date"%>
+<%@ page import="java.util.Date"%> <%--자바 관련 라이브러리 사용 : import 문 사용 필요 위 코드 삽입하자. 에러 해결!--%>
 
 
-<%-- 주석처리 --%> 
-    
-    
+
+<%-- 최하단 상태바에 날짜 출력 자바 코드를 추가 작성--%>    
 <%
 	Date day = new java.util.Date();
 	String am_pm;
