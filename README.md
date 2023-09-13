@@ -45,4 +45,3 @@ JSP 페이지 주석
 
 23년 9월 6일 쇼핑몰 메인 페이지
 [index.jsp : 실행/수정 완료](https://g-servlet-kuanl.run.goorm.site/) 
--------------------
