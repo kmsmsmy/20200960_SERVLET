@@ -1,17 +1,19 @@
-<%@ page contentType="text/html;charset=utf-8"%>
+<%@ page contentType="text/html;charset=utf-8"%>  <%-- 띄어쓰기 조심할것 --%>
 <nav class="navbar navbar-expand  navbar-white bg-white">
 	<div class="dropdown">
   		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     		메뉴
   		</button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">CPU</a>
         
-     </div>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">설정</a>
+            <a class="dropdown-item" href="#">홈페이지</a>
+        
+        </div>
 	</div>
     
     <div>
-        <img src="image\OBBANG.jpg" class="img-fluid" alt="main_image">
+        <img src="image\COPANG.jpg" class="img-fluid" alt="main_image">
     </div>
     
 	<div class="container">
