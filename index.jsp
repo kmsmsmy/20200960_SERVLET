@@ -1,5 +1,6 @@
 <%@ page contentType = "text/html;charset=utf-8" %> <%-- 한글 깨짐, 앞으로 모든 페이지는 이 코드를 삽입하자. 해결 --%> 
 <%@ page import="java.util.Date"%> <%--head가 아닌 상단에 있어도 상관없음 --%>
+<%@ page buffer="1kb" autoFlush="true"%>
 
 <html>
 <head>
@@ -23,17 +24,12 @@
 	<%@ include file="body_main.jsp" %>	 <%-- body_main.jsp에 분리하기 --%>
     <%@ include file="footer.jsp" %>     <%-- footer.jsp에 분리하기 --%>  <%--자바 분리하기 3주차 연습문제 안될시 이것 삭제하기--%>
 
-    <div class="container">
-        
-        <div class="text-center">
-            <h3>            
-                <%=tagline%>
-             </h3>
-        </div>
-     <hr>
-     </div>
-    
+
 <%-- CLASS는 스타일 적용시에 사용 되는 이름, 중첩 가능 --%>
+
+현재 페이지 버퍼 용량 : <%= out.getBufferSize() %> <br>
+남은 페이지 버퍼 용량 : <%= out.getRemaining() %>
+
 </body>
 </html>
 
