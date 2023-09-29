@@ -2,7 +2,7 @@
 <html>
     <head>
         <body>
-            <h4>
+            <h4> 
             현재 페이지는 팝업 페이지 입니다.
             <br><br>
             파일명은 popup1.jsp 

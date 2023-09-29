@@ -69,7 +69,8 @@ public class ProductRepository {
 		bicycle9.setManufacturer("Cervelo");
 		bicycle9.setUnitsInStock(1000);
 		bicycle9.setCondition("new");
-		
+		//9개의 자전거 사진 업로드하기
+        
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
 
 		listOfProducts.add(bicycle1);
