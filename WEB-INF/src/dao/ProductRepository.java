@@ -72,6 +72,8 @@ public class ProductRepository {
 		//9개의 자전거 사진 업로드하기
         
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
+        
+        //사진크기 일정하게 하는 코드 모름
 
 		listOfProducts.add(bicycle1);
 		listOfProducts.add(bicycle2);
