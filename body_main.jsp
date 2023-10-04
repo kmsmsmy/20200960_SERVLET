@@ -27,11 +27,8 @@
 			%>
 			<div class="col-md-4">
                  <div class="card bg-dark text-white">
-                    <img src="image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="..." width="200"> <%--image 폴더의 product폴더 안의 사진을 불러오기--%>
-
-
-                     
-                     
+                    <img src="image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="..." height="250" width="200"> <%--image 폴더의 product폴더 안의 사진을 불러오기--%>
+                
                     <div class="card-img-overlay">
                         <h5 class="card-title">자전거 이미지 샘플</h5>
                         <p class="card-text">출처 : 구글 검색</p>
@@ -39,9 +36,10 @@
                  </div>
 
 				<h3><%=product.getPname()%></h3>
-				<p><%=product.getDescription()%>
-				<p><%=product.getUnitPrice()%>원
-                    
+                <p><%=product.getDescription()%></p>
+                <p><%=product.getUnitPrice()%>원</p>
+                <p><a href="product_detail.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상품 상세 정보 &raquo;</a>
+        
 			</div>
 			<%
 				} 
@@ -74,4 +72,4 @@
           <a href="#" class="list-group-item list-group-item-action">
             HYBRID 자전거
           </a>
-        </div>
+     </div>
