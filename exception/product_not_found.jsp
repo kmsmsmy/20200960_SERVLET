@@ -4,7 +4,6 @@
 <%@ page import="example.*" %>
 
 
-
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <html>
 <head>
@@ -16,7 +15,7 @@
 </head>
     
 <body>
-    <%@ include file="../top_banner.jsp" %>
+    <%@ include file="../top_banner.jsp" %> <%--../는 상위 폴더를 의미한다--%>
 	<%@ include file="../top_menu.jsp" %>
 	<div class="jumbotron">
 		<div class="container">
