@@ -1,6 +1,8 @@
 <%@ page contentType="text/html; charset=utf-8"%> <%-- 한글 깨짐, 앞으로 모든 페이지는 이 코드를 삽입하자. 해결 --%> 
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="dto.Product"%>
+<%@ page import="dao.ProductRepository"%>
+
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" /> <%-- 띄어쓰기 조심할것--%>
 
 <%! String greeting = "현재 페이지는 자전거 상품 목록입니다.";
@@ -15,9 +17,11 @@
 		</div>
 	</div>
 
-    <%
-	    ArrayList<Product> listOfProducts = productDAO.getAllProducts(); // 리스트에 상품 전체 정보를 얻어온다.
-    %> 	
+	<%
+		ProductRepository dao = ProductRepository.getInstance();
+		ArrayList<Product> listOfProducts = dao.getAllProducts();
+	%>
+
         
 	<div class="container">
 		<div class="row" align="center">
@@ -27,10 +31,8 @@
 			%>
 			<div class="col-md-4">
                  <div class="card bg-dark text-white">
-                    <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="..." height="250" width="200">
-
-                     
-                    <div class="card-img-overlay">
+                     <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="..." height="250" width="200">
+                   <div class="card-img-overlay">
                         <h5 class="card-title">자전거 이미지 샘플</h5>
                         <p class="card-text">출처 : 구글 검색</p>
                     </div>
@@ -39,8 +41,8 @@
 				<h3><%=product.getPname()%></h3>
                 <p><%=product.getDescription()%></p>
                 <p><%=product.getUnitPrice()%>원</p>
-                <p><a href="product_detail.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상품 상세 정보 &raquo;</a>
-        
+                <p><a href="product_detail_ad.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상품 상세 정보 &raquo;</a>
+       
 			</div>
 			<%
 				} 

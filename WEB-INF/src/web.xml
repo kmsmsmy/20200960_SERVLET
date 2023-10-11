@@ -2,5 +2,4 @@
     <error-page>
     <location>/main_server_downtime.jsp</location>
     </error-page>
-
 </web-app>

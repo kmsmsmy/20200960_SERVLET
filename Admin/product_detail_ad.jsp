@@ -2,6 +2,7 @@
 <%@ page import="dto.Product"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="example.*" %>
+<%@ page import="dao.ProductRepository"%>
 <%@ page errorPage="exception/product_not_found.jsp" %>
 
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
@@ -14,7 +15,9 @@
 <title>상품 상세 정보</title>
 </head>
 <body>
-    	<%@ include file="top_banner.jsp" %>
+    <%@ include file="top_menu_ad.jsp" %>
+
+    <%@ include file="top_banner.jsp" %>
 	<%@ include file="top_menu.jsp" %>
 	<div class="jumbotron">
 		<div class="container">
@@ -23,7 +26,9 @@
 	</div>
 	<%
 		String id = request.getParameter("id");
-		Product product = productDAO.getProductById(id);
+    	ProductRepository dao = ProductRepository.getInstance();
+		Product product = dao.getProductById(id); 
+
 	%>
 	<div class="container">
 		<div class="row">
@@ -37,7 +42,7 @@
 				<h4><%=product.getUnitPrice()%>원</h4>
                 
                 <div class="card bg-dark text-white">
-                 <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="...">
+                    <img src="image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay">
                     <h5 class="card-title">상품 이미지 원본</h5>
                     <p class="card-text">출처 : 구글 검색</p>
