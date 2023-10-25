@@ -29,7 +29,6 @@
 	String unitsInStock = multi.getParameter("unitsInStock");
 	String condition = multi.getParameter("condition");
 
-
 	Integer price;
 
 	if (unitPrice.isEmpty())
