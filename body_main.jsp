@@ -47,7 +47,7 @@
 		<hr>
 	</div>
 <%-- div 닫지 않았음--%>
-
+</div>
         
     <div class="card bg-dark text-white">
     <img src="image/bike.jpg" class="card-img" alt="..."> <%-- 자전거 이미지 업로드--%>

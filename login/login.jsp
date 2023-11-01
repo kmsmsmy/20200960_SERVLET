@@ -9,7 +9,7 @@
 
 </head>
 <body>
-	<jsp:include page="../top_menu.jsp" />
+	<jsp:include page="../top_menu.jsp"/>
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="display-3">상품 등록 페이지 접근 - 로그인이 필요합니다.</h1>
@@ -25,7 +25,7 @@
 					out.println("아이디와 비밀번호를 확인해 주세요");
 					out.println("</div>");
 				}
-			%> 
+			%>
             <form class="form-signin" action="j_security_check" method="post">
 			<div class="form-group">
 				<label for="inputUserName" class="sr-only">User Name</label> 
@@ -41,5 +41,3 @@
 </div>
 </body>
 </html>
-
-            
