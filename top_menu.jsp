@@ -7,7 +7,7 @@
         
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">설정</a>
-            <a class="dropdown-item" href="#">홈페이지</a>
+            <a class="dropdown-item" href="index.jsp">홈페이지</a>
         
         </div>
 	</div>

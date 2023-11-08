@@ -17,8 +17,7 @@
 <body>
     <%@ include file="top_menu_ad.jsp" %>
 
-    <%@ include file="top_banner.jsp" %>
-	<%@ include file="top_menu.jsp" %>
+
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="display-3">상품 상세 정보</h1>
@@ -48,12 +47,13 @@
                     <p class="card-text">출처 : 구글 검색</p>
                     </div>
                 </div>
-	            <p><a href="#" class="btn btn-info"> 상품 주문 &raquo;</a> <a href="index.jsp" class="btn btn-secondary"> 상품 목록 &raquo;</a>
+	            <p><a href="#" class="btn btn-info"> 상품 주문 &raquo;</a>
+                   <a href="index_ad.jsp" class="btn btn-secondary"> 상품 목록 &raquo;</a>
 		    </div>
 		</div>
 		<hr>
 	</div>
-    <%@ include file="footer.jsp" %>
+    <%@ include file="../footer.jsp" %>
 </body>
 </html>
 

@@ -9,7 +9,8 @@
 
 </head>
 <body>
-	<jsp:include page="../top_menu.jsp"/>
+    <jsp:include page="../Admin/top_menu_ad.jsp"/>
+	<%--<jsp:include page="../top_menu.jsp"/>--%>
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="display-3">상품 등록 페이지 접근 - 로그인이 필요합니다.</h1>

@@ -19,10 +19,10 @@
 <title>Welcome</title>
 </head>
 <body>   <%-- JSP 주석 처리 --%>
-    <%@ include file="/top_banner.jsp" %> <%-- 3주차 top_banner.jsp에 분리하기 --%>
-    <%@ include file="./top_menu_ad.jsp" %>   <%-- top_menu.jsp에 분리하기 --%>
-	<%@ include file="./body_main_ad.jsp" %>	 <%-- body_main.jsp에 분리하기 --%>
-    <%@ include file="./footer_ad.jsp" %>     <%-- footer.jsp에 분리하기 --%>  <%--자바 분리하기 3주차 연습문제 안될시 이것 삭제하기--%>
+    <%@ include file="../top_banner.jsp" %> <%-- 3주차 top_banner.jsp에 분리하기 --%>
+    <%@ include file="top_menu_ad.jsp" %>   <%-- top_menu.jsp에 분리하기 --%>
+	<%@ include file="body_main_ad.jsp" %>	 <%-- body_main.jsp에 분리하기 --%>
+    <%@ include file="footer_ad.jsp" %>     <%-- footer.jsp에 분리하기 --%>  <%--자바 분리하기 3주차 연습문제 안될시 이것 삭제하기--%>
 
 
 <%-- CLASS는 스타일 적용시에 사용 되는 이름, 중첩 가능 --%>
