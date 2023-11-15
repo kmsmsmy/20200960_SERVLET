@@ -17,7 +17,7 @@
 <title>장바구니</title>
 </head>
 <body>
-    <jsp:include page="../top_menu.jsp" /> <%--현재 탑 메뉴 이미지 출력 에러 : 일단 패스--%>
+    <jsp:include page="top_menu_cart.jsp" /> <%--현재 탑 메뉴 이미지 출력 에러 : 일단 패스--%>
 
 	<div class="jumbotron">
 	<div class="container">
