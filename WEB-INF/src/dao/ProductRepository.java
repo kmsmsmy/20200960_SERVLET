@@ -38,58 +38,70 @@ public class ProductRepository {
 		bicycle3.setCondition("NEW");
         
         bicycle3.setFilename("P1236.jpg");
+
         
+        
+        
+       
         Product bicycle4 = new Product("P1237", "GIANT 자전거", 1000000);
 		bicycle4.setDescription("프레임: advanced SL-grade composite, integrated seatpost, disc");
 		bicycle4.setCategory("Bicycle4");
 		bicycle4.setManufacturer("Giant");
 		bicycle4.setUnitsInStock(1000);
-		bicycle4.setCondition("new");
+		bicycle4.setCondition("New");
         
         bicycle4.setFilename("P1237.jpg");
-        
+
+
         Product bicycle5 = new Product("P1238", "캐논데일 자전거", 1300000);
 		bicycle5.setDescription("프레임: supersix abo clearly capable WA96");
 		bicycle5.setCategory("Bicycle5");
 		bicycle5.setManufacturer("Cannondale");
 		bicycle5.setUnitsInStock(1000);
-		bicycle5.setCondition("new");
+		bicycle5.setCondition("New");
         
         bicycle5.setFilename("P1238.jpg");
         
+
         Product bicycle6 = new Product("P1239", "피나렐로 자전거", 2400000);
 		bicycle6.setDescription("프레임: dogma F 2022 disc B614 ");
 		bicycle6.setCategory("Bicycle6");
 		bicycle6.setManufacturer("Pinarello");
 		bicycle6.setUnitsInStock(1000);
-		bicycle6.setCondition("new");
+		bicycle6.setCondition("New");
         
         bicycle6.setFilename("P1239.jpg");
+        
+        
         
         Product bicycle7 = new Product("P1240", "스페셜 라이즈드 자전거", 1800000);
 		bicycle7.setDescription("프레임: SL8 2024 Tarmac shimano dura-ace di2");
 		bicycle7.setCategory("Bicycle7");
 		bicycle7.setManufacturer("Specialized");
 		bicycle7.setUnitsInStock(1000);
-		bicycle7.setCondition("new");
+		bicycle7.setCondition("New");
         
         bicycle7.setFilename("P1240.jpg");
+        
+        
         
         Product bicycle8 = new Product("P1241", "메리다 자전거", 800000);
 		bicycle8.setDescription("프레임: scultura 5000 CF3 disc ");
 		bicycle8.setCategory("Bicycle8");
 		bicycle8.setManufacturer("Merida");
 		bicycle8.setUnitsInStock(1000);
-		bicycle8.setCondition("new");
+		bicycle8.setCondition("New");
         
         bicycle8.setFilename("P1241.jpg");
+        
+        
         
         Product bicycle9 = new Product("P1242", "써벨로 자전거", 6000000);
 		bicycle9.setDescription("프레임: S5 Dura Ace di2");
 		bicycle9.setCategory("Bicycle9");
 		bicycle9.setManufacturer("Cervelo");
 		bicycle9.setUnitsInStock(1000);
-		bicycle9.setCondition("new");
+		bicycle9.setCondition("New");
         
         bicycle9.setFilename("P1242.jpg");
 		//9개의 자전거 사진 업로드하기
