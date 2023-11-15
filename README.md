@@ -1,3 +1,4 @@
+1. 2
 # 20200960_SERVLET
 ## 쇼핑물 페이지
 [index.jsp : 실행/수정 완료](https://g-servlet-kuanl.run.goorm.site/) 
