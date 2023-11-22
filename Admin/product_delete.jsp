@@ -43,5 +43,5 @@
     }
 
     // 삭제 후 목록 페이지로 리다이렉트
-    response.sendRedirect("product_detail.jsp?edit=delete");
+    response.sendRedirect("product_edit.jsp?edit=delete");
 %>
