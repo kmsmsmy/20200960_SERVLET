@@ -19,11 +19,12 @@
 
     <%
 	    ArrayList<Product> listOfProducts = productDAO.getAllProducts(); // 리스트에 상품 전체 정보를 얻어온다.
+    
     %> 	
         
 	<div class="container">
 		<div class="row" align="center">    
-            <%
+            <%                
 		        String sql = "select * from product"; // 조회
 		        pstmt = conn.prepareStatement(sql); // 연결 생성
 		        rs = pstmt.executeQuery(); // 쿼리 실행
@@ -80,4 +81,5 @@
           <a href="#" class="list-group-item list-group-item-action">
             HYBRID 자전거
           </a>
-     </div>
+         </div>
+    </div>

@@ -14,6 +14,16 @@
 <%
 	String cartId = session.getId(); // 세션 정보 얻기
 %>
+    <script type="text/javascript">
+    function confirmOrder() {
+        var cartList = <%= session.getAttribute("cartlist") %>; // 세션에서 카트 리스트 가져오기
+        if (cartList == null || cartList.length === 0) {
+            alert("장바구니가 비어있습니다. 계속하려면 장바구니에 상품을 추가해주세요.");
+            return false;
+        }
+        return true;
+    }
+</script>
 <title>장바구니</title>
 </head>
 <body>
@@ -29,7 +39,8 @@
 		<table width="100%">
 			<tr>
 				<td align="left"><a href="product_cart_remove_all.jsp?cartId=<%=cartId%>" class="btn btn-danger">삭제하기</a></td>
-				<td align="right"><a href="../order/order_info.jsp?cartId=<%= cartId %>" class="btn btn-success">주문하기</a></td><%--주문하기 11주차 수업--%>
+                <td align="right"><a href="../order/order_info.jsp?cartId=<%= cartId %>" class="btn btn-success" onclick="return confirmOrder()">주문하기</a></td>
+         
             </tr>
 		</table>
         

@@ -2,7 +2,6 @@
 <%@ page import="java.util.Date"%> <%--head가 아닌 상단에 있어도 상관없음 --%>
 <%@ page buffer="1kb" autoFlush="true"%> <%--3주차 액션태그 forward 버퍼크기 설정--%>
 <%@ page import="example.*" %>  
-
 <html>
 <head>
 <script> window.open("/popup//popup1.jsp", "popup", "width=365, height = 250, left = 0, top=0")</script><%--팝업창 설정하기 3주차--%>
