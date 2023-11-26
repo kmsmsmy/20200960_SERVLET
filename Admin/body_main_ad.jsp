@@ -31,10 +31,7 @@
 			<div class="col-md-4">
                  <div class="card bg-dark text-white">
                      <img src="../image/product/<%=product.getFilename()%>" class="card-img" alt="..." height="250"> <%--admin 폴더안의 image에서 빼온다음에 바깥의 image 폴더에 업로드--%>
-                   <div class="card-img-overlay">
-                        <h5 class="card-title">자전거 이미지 샘플</h5>
-                        <p class="card-text">출처 : 구글 검색</p>
-                    </div>
+
                  </div>
 
 				<h3><%=product.getPname()%></h3>

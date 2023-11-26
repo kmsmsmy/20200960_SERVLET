@@ -17,20 +17,20 @@
     <!-- 기존의 보안 및 로그인 설정 등 -->
     <security-role>
 		<description></description >
-		<role-name>admin</role-name>
+		<role-name>Admin</role-name>
 	</security-role>
 	<security-constraint>
 		<display-name>WebMarket Security_01</display-name>
 		<web-resource-collection>
 			<web-resource-name>WebMarket</web-resource-name>
 			<description></description>
-			<url-pattern>/admin/product_add.jsp</url-pattern>
-            <url-pattern>/admin/index_ad.jsp</url-pattern>
-            <url-pattern>/admin/product_edit.jsp</url-pattern>
+			<url-pattern>/Admin/product_add.jsp</url-pattern>
+            <url-pattern>/Admin/index_ad.jsp</url-pattern>
+            <url-pattern>/Admin/product_edit.jsp</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>
-			<role-name>admin</role-name>
+			<role-name>Admin</role-name>
 		</auth-constraint>
 	</security-constraint>
 	<login-config>
@@ -41,4 +41,3 @@
 		</form-login-config>
 	</login-config>
 </web-app>
-

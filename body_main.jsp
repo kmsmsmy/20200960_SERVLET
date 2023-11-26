@@ -33,10 +33,7 @@
 			<div class="col-md-4">
                  <div class="card bg-dark text-white">
                     <img src="image/product/<%=rs.getString("p_fileName")%>" class="card-img" alt="..." height="250">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">자전거 이미지 샘플</h5>
-                        <p class="card-text">출처 : 구글 검색</p>
-                    </div>
+
                  </div>
                 
                 <h3><%=rs.getString("p_name")%></h3>
