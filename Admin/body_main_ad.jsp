@@ -56,19 +56,19 @@
     </div>
         
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          <a href="https://namu.wiki/w/MTB" class="list-group-item list-group-item-action active" aria-current="true">
             MTB 자전거
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
+          <a href="https://namu.wiki/w/%EA%B7%B8%EB%9E%98%EB%B8%94%20%EB%B0%94%EC%9D%B4%ED%81%AC" class="list-group-item list-group-item-action">
             GRAVEL 자전거
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
+          <a href="https://namu.wiki/w/%EB%A1%9C%EB%93%9C%EB%B0%94%EC%9D%B4%ED%81%AC" class="list-group-item list-group-item-action">
             ROAD 자전거
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
+          <a href="https://namu.wiki/w/%EC%A0%84%EA%B8%B0%EC%9E%90%EC%A0%84%EA%B1%B0" class="list-group-item list-group-item-action">
             ELECTRIC 자전거
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
+          <a href="https://namu.wiki/w/%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C%20%EC%9E%90%EC%A0%84%EA%B1%B0" class="list-group-item list-group-item-action">
             HYBRID 자전거
           </a>
      </div>
