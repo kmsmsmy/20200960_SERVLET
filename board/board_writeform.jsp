@@ -46,7 +46,8 @@
 	<div class="form-group row">
 		<label class="col-sm-2 control-label" >성명</label>
 		<div class="col-sm-3">
-			<input name="name" type="text" class="form-control" value="<%=name %>" placeholder="name">
+		<input name="name" type="text" class="form-control" value="${empty name ? '' : name}" placeholder="name">
+
 		</div>
 	</div>
 	<div class="form-group row">
@@ -62,19 +63,38 @@
 		</div>
 	</div>
 	<div class="form-group row">
-		<div class="col-sm-offset-2 col-sm-10 ">
-		 	<input type="submit" class="btn btn-primary " value="등록 ">				
-			<input type="reset" class="btn btn-primary " value="취소 ">
-		</div>
-	</div>
+    <div class="col-sm-offset-2 col-sm-10 ">
+        <input type="submit" class="btn btn-primary" value="등록">
+        <input type="button" class="btn btn-primary" value="취소" onclick="confirmCancel()">
+    </div>
+</div>
+
+<script type="text/javascript">
+    function checkForm() {
+        if (!document.newWrite.name.value) {
+            alert("성명을 입력하세요.");
+            return false;
+        }
+        if (!document.newWrite.subject.value) {
+            alert("제목을 입력하세요.");
+            return false;
+        }
+        if (!document.newWrite.content.value) {
+            alert("내용을 입력하세요.");
+            return false;
+        }
+    }
+
+    function confirmCancel() {
+        if (confirm("취소하시겠습니까?")) {
+            location.href = "./BoardListAction.do";
+        }
+    }
+</script>
+
 </form>
 <hr>
 </div>
 <jsp:include page="../footer.jsp" />
 </body>
 </html>
-
-
-
-
-

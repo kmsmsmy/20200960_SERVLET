@@ -1,6 +1,8 @@
 <%@ page contentType="text/html; charset=utf-8"%>
-<%@ taglib prefix="c" uri=http://java.sun.com/jsp/jstl/core%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="mvc.model.Board_dto"%>
+
+
 
 <%
      Board_dto notice = (Board_dto) request.getAttribute("board");
@@ -46,23 +48,24 @@
 			<textarea name="content" class="form-control" cols="50" rows="5"> <%=notice.getContent()%></textarea>
 		</div>
 	</div>
-	<div class="form-group row">
+		<div class="form-group row">
 	   <div class="col-sm-offset-2 col-sm-10 ">
 		<c:set var="userId" value="<%=notice.getId()%>" />
 		<c:if test="${sessionId==userId}">
 		<p>
 		<a href="./BoardDeleteAction.do?num=<%=notice.getNum()%>&pageNum=<%=nowpage%>" class="btn btn-danger"> 삭제</a> 
+            </p>
+            <p>
 			<input type="submit" class="btn btn-success" value="수정 ">
-		</c:if>
+            </p>
+           </c:if>
 		<a href="./BoardListAction.do?pageNum=<%=nowpage%>" class="btn btn-primary"> 목록</a>
 	   </div>
 	</div>
+
 </form>
 <hr>
 </div>
 <jsp:include page="../footer.jsp" />
 </body>
 </html>
-
-
-

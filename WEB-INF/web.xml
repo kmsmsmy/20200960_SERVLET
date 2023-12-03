@@ -40,6 +40,9 @@
 			<form-error-page>/login/login_failed.jsp</form-error-page>
 		</form-login-config>
 	</login-config>
+    
+
+
     <servlet>
 		<servlet-name>BoardController</servlet-name>
 		<servlet-class>mvc.controller.Board_controller</servlet-class>

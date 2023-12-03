@@ -19,12 +19,10 @@
 	<div class="container">
 		<div class="navbar-header">
 	        <a class="navbar-brand" href="index.jsp">상품목록(기본 홈)</a>
-            <a class="navbar-brand" href="./index.jsp">로그인</a>
+            <a class="navbar-brand" href="login/login_user.jsp">로그인</a>
             <a class="navbar-brand" href="/BoardListAction.do?pageNum=1">게시판(고객센터)</a>
-            <a class="navbar-brand" href="./index.jsp">회원가입</a>
-            <a class="navbar-brand" href="./index.jsp">고객센터</a>
+            <a class="navbar-brand" href="member/member_join_process.jsp">회원가입</a>
             <a class="navbar-brand" href="Admin/index_ad.jsp">관리자모드</a>
-
 		</div>
 	</div>
 </nav>

@@ -21,7 +21,6 @@
 
 <title>고객센터 게시판</title>
 <script type="text/javascript">
-
     function checkForm() {
         var sessionId = "<%=sessionId%>";
 
@@ -31,9 +30,16 @@
             return false;
         }
 
+        // 세션에 이동할 페이지 경로 저장
+        sessionStorage.setItem("redirectPath", "./BoardWriteForm.do?id=" + sessionId);
+
+        // 로그인 성공 시 board_writeform.jsp로 이동하도록 변경
         location.href = "./BoardWriteForm.do?id=" + sessionId;
+        return false;
     }
 </script>
+
+
 </head>
 
 <body>

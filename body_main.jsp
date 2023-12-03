@@ -53,7 +53,6 @@
 		</div>
 		<hr>
 	</div>
-<%-- div 닫지 않았음--%>
 
         
     <div class="card bg-dark text-white">
