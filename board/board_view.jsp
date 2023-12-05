@@ -2,8 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="mvc.model.Board_dto"%>
 
-
-
 <%
      Board_dto notice = (Board_dto) request.getAttribute("board");
      int num = ((Integer) request.getAttribute("num")).intValue();

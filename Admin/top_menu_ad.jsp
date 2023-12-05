@@ -19,7 +19,9 @@
 	<div class="container">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="index_ad.jsp">홈페이지</a> <%--<a class="navbar-brand" href="index_ad.jsp">을 점 추가하여 수정한것--%>
-            <a class="navbar-brand" href="index_ad.jsp">회원 보기/추가/수정/삭제</a>
+            <a class="navbar-brand" href="../member/member_view.jsp">회원 보기</a>
+            <a class="navbar-brand" href="../member/meeber_update.jsp">회원 수정</a>
+            <a class="navbar-brand" href="../member/member_delete_process.jsp">회원 삭제</a>
             <a class="navbar-brand" href="index_ad.jsp">상품 보기</a>
             <a class="navbar-brand" href="product_add.jsp">등록</a>        <%--로그인하기 전에는 등록페이지로 못가게 설정하고 싶음--%>
             <a class="navbar-brand" href="product_edit.jsp?edit=update">수정</a>

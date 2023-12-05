@@ -139,7 +139,7 @@
 		<div class="form-group row">
 			<div class="col-sm-offset-2 col-sm-10">
 				<input type="submit" class="btn btn-primary" value="등록">
-				<input type="reset" class="btn btn-warning" value="취소">
+                <input type="reset" class="btn btn-warning" value="취소" onclick="goBack()">
 			</div>
 		</div>
 	</form>
@@ -147,6 +147,10 @@
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
     //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
+    function goBack() {
+        // 이전 페이지로 이동
+        window.history.back();
+    }
     function Postcode() {
         new daum.Postcode({
             oncomplete: function(data) {
