@@ -217,3 +217,5 @@ product_delete.jsp 파일
 회원가입 페이지 구현 완료
 로그인 페이지 구현 완료(로그인 페이지에서 회원가입 누르면 member_join_process로 이동됨)
 member_view 회원정보 코드 구현
+member 폴더에 회원가입 코드 있음
+login 폴더에 login_user.jsp 파일 있음
